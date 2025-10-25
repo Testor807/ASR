@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "APIControlledApp.app"
-               BlueprintName = "APIControlledApp"
-               ReferencedContainer = "container:APIControlledApp.xcodeproj">
+               BuildableName = "CantoneseVoiceApp.app"
+               BlueprintName = "CantoneseVoiceApp"
+               ReferencedContainer = "container:CantoneseVoiceApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "APIControlledAppTests.xctest"
-               BlueprintName = "APIControlledAppTests"
-               ReferencedContainer = "container:APIControlledApp.xcodeproj">
+               BuildableName = "CantoneseVoiceAppTests.xctest"
+               BlueprintName = "CantoneseVoiceAppTests"
+               ReferencedContainer = "container:CantoneseVoiceApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "APIControlledApp.app"
-            BlueprintName = "APIControlledApp"
-            ReferencedContainer = "container:APIControlledApp.xcodeproj">
+            BuildableName = "CantoneseVoiceApp.app"
+            BlueprintName = "CantoneseVoiceApp"
+            ReferencedContainer = "container:CantoneseVoiceApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "APIControlledApp.app"
-            BlueprintName = "APIControlledApp"
-            ReferencedContainer = "container:APIControlledApp.xcodeproj">
+            BuildableName = "CantoneseVoiceApp.app"
+            BlueprintName = "CantoneseVoiceApp"
+            ReferencedContainer = "container:CantoneseVoiceApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
