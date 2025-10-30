@@ -31,6 +31,8 @@ public class Constants {
     // Permissions
     public static final int PERMISSION_REQUEST_RECORD_AUDIO = 1001;
     public static final int PERMISSION_REQUEST_STORAGE = 1002;
+    public static final int PERMISSION_REQUEST_ALL = 1003;
+    public static final int PERMISSION_REQUEST_FOREGROUND_SERVICE = 1004;
     
     // Intent Actions
     public static final String ACTION_START_TRANSCRIPTION = "com.example.cantonesevoicerecognition.START_TRANSCRIPTION";

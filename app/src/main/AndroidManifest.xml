@@ -2,11 +2,30 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- 录音权限 - 用于捕获用户语音输入进行语音识别 -->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    
+    <!-- 存储权限 - 用于保存转录记录和音频文件 (Android 9及以下版本需要) -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" 
+        android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" 
+        android:maxSdkVersion="28" />
+    
+    <!-- 前台服务权限 - 用于在后台持续进行语音转录 -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    
+    <!-- 麦克风前台服务权限 - Android 14及以上版本需要 -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+    
+    <!-- 网络权限 - 用于下载语音模型文件 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+    <!-- 唤醒锁权限 - 防止转录过程中设备休眠 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
+        android:name=".CantoneseVoiceApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -24,6 +43,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <activity
+            android:name=".ui.history.HistoryActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        
+        <activity
+            android:name=".ui.settings.SettingsActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        
+        <service
+            android:name=".service.TranscriptionService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="microphone" />
     </application>
 
 </manifest>
